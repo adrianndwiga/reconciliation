@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc index.ts --resolveJsonModule true",
+    "run": "node index.js",
+    "start": "npm run build && npm run run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,8 +19,11 @@
     "url": "https://github.com/adrianndwiga/reconciliation/issues"
   },
   "homepage": "https://github.com/adrianndwiga/reconciliation#readme",
-  "dependencies": {},
+  "dependencies": {
+    "htmlparser2": "^4.0.0"
+  },
   "devDependencies": {
+    "@types/node": "^12.12.14",
     "typescript": "^3.7.3"
   }
 }
