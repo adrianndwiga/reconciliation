@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc index.ts --resolveJsonModule true",
-    "run": "node index.js",
-    "start": "npm run build && npm run run",
+    "start": "npm run build && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +19,12 @@
   },
   "homepage": "https://github.com/adrianndwiga/reconciliation#readme",
   "dependencies": {
-    "htmlparser2": "^4.0.0"
+    "cheerio": "^1.0.0-rc.3",
+    "html-dom-parser": "^0.2.3",
+    "htmlparser2": "^4.0.0",
+    "jquery": "^3.4.1",
+    "node-html-parser": "^1.1.16",
+    "xml2json": "^0.11.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",
